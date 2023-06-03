@@ -1,4 +1,4 @@
-# Hadoop data science examples 
+# Hadoop multi-node cluster big data analysis examples 
 ### Hadoop multi-node setup on VMs
 [Link](https://medium.com/@jootorres_11979/how-to-set-up-a-hadoop-3-2-1-multi-node-cluster-on-ubuntu-18-04-2-nodes-567ca44a3b12)
 
