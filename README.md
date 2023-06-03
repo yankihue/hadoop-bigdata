@@ -35,3 +35,10 @@ jar cf LongGameBlackWinRate.jar LongGameBlackWinRate*.class
 
 hadoop jar LongGameBlackWinRate.jar LongGameBlackWinRate /input /output
 ```
+
+
+### Example Jobs
+- [Underdog Win Rate](https://github.com/yankihue/hadoop-bigdata/blob/main/UnderdogWinRate/UnderdogWinRate.java): Calculates the win rate of underdogs in the dataset (an underdog is a player with a lower ELO rating than their opponent). Result:  33% (0.3305420684557871)
+- [Long Game Black Win Rate](https://github.com/yankihue/hadoop-bigdata/blob/main/LongGameBlackWinRate/LongGameBlackWinRate.java): Calculates the win rate of black when the
+number of moves in a game is more than 100. Result 47% (0.4770832870257174)
+- [Popular Opening High Elo](https://github.com/yankihue/hadoop-bigdata/blob/main/PopularOpeningHighElo/PopularOpeningHighElo.java): Returns the most popular opening when both players have an ELO rating greater than 1900. Result: "Modern Defense"
