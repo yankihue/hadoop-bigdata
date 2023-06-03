@@ -26,12 +26,12 @@ Afterwards, you can move the database to hdfs. (Change the path of your .csv fil
 hdfs dfs -put /home/hadoopuser/Desktop/chess_games.csv /input
 ```
 
-These are the steps you need to follow to run any given java job on your cluster. 
+These are the steps you need to follow to run any given java job on your cluster. You can just download the .jar file of any job from this repo and only run the `hadoop jar ...` step but the first 2 steps are what you need to compile your own custom jobs should you write any.
 
 ```bash
-javac -classpath $(hadoop classpath) EventWithMostDraws.java 
+javac -classpath $(hadoop classpath) LongGameBlackWinRate.java 
 
-jar cf eventwithmostdraws.jar EventWithMostDraws*.class
+jar cf LongGameBlackWinRate.jar LongGameBlackWinRate*.class
 
-hadoop jar eventwithmostdraws.jar EventWithMostDraws /input /output
+hadoop jar LongGameBlackWinRate.jar LongGameBlackWinRate /input /output
 ```
